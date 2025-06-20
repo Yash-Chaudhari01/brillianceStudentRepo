@@ -74,7 +74,12 @@
    width: 350px;
    border-radius: 3px;
    margin-left: 50px;
-   box-shadow: ;
+   border-radius: 100px;
+   border: 20px solid white;
+}
+#img1:hover{
+   transform: rotateY(360deg);
+   transition: 3s;
 }
 #info{
     margin-left: 300px;
@@ -90,7 +95,10 @@
     color:rgb(84, 241, 176) ;
     font-size: 40px;
     margin-top: 30px;
-    
+}
+#ft:hover{
+    font-size: 50px;
+    color:chartreuse ;
 }
 #st{
     /* display: flex;
@@ -121,6 +129,8 @@
     color: rgb(7, 126, 76);
     transform: scale(1.5,1.5);
     cursor: pointer;
+    background-color: rgb(7, 126, 76);
+    color: black;
 }
 #BTN2:active{
     background-color: rgb(194, 239, 220);
