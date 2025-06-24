@@ -99,6 +99,7 @@ body{
 #pic1:hover{
     transform: rotateY(180deg);
     transition: 2s;
+    perspective: 1000px;
 }
 #fi{
     display: flex;
@@ -106,8 +107,9 @@ body{
     justify-content: center;
     /* background-color: #fff; */
     display: ruby-text;
-    box-shadow: 10px 15px 15px rgb(0, 0, 0);
-    padding-left:15px;
+    text-shadow: 10px 10px 15px rgb(0, 0, 0);
+    padding-left:-10px;
+    height: 45px;
 }
 /* #fi:hover{
     padding-top: 15px;
@@ -118,14 +120,17 @@ body{
     justify-content: center;
     align-items: center;
     height: 40px;
-    box-shadow: 10px 15px 15px rgb(0, 0, 0);
+    text-shadow: 10px 10px 15px rgb(0, 0, 0);
     padding-top: 10px;
-    height: 64px;
+    height: 30px;
+    padding-left: 5px;
+    display: ruby-text;
+    font-size: 17px;
 }
-#si:hover{
+/* #si:hover{
     padding-top: 20px;
     transition: 1s;
-}
+} */
 #fi1{
     font-size: xx-large;
 }
@@ -135,13 +140,37 @@ body{
     justify-content: center;
     align-items: center;
     /* background-color: bisque; */
-    font-size: x-large;
-    box-shadow: 10px 15px 15px rgb(0, 0, 0);
-    padding-left:5px;
+    font-size: 42px;
+    text-shadow: 10px 15px 15px rgb(0, 0, 0);
+    padding-left:7px;
     margin-top: 10px;
-    height: 64px;
+    height: 120px;
+    margin-top: 10px;
+    text-align:left;
+    text-decoration: hwb(from color h w b);
 }
-#ti:hover{
+/* #ti:hover{
     padding-top: 15px;
     transition: 1s;
+} */
+ #ti1{
+    text-decoration: color-mix(in srgb, red 50%, orange 50%);
+ }
+ p{
+    margin-top: 40px;
+    margin-left: 6px;
+ }
+ strong {
+  color: #283334;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  line-height: inherit;
+}
+
+strong:hover {
+  background: linear-gradient(45deg, #fd1d1d, #1ceee0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(3rem); /* Slight scale effect */
 }
